@@ -21,7 +21,8 @@ function App() {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Azure Function Caller</h1>
+      <h1>Azure Static Web Apps と Azure Functionsの連携テスト
+      </h1>
       <input
         type="text"
         value={name}
@@ -30,10 +31,10 @@ function App() {
         style={{ padding: '10px', width: '200px', marginRight: '10px' }}
       />
       <button onClick={callFunction} style={{ padding: '10px 20px' }}>
-        Call Function
+        API実行
       </button>
       <div style={{ marginTop: '20px', fontSize: '16px', color: 'blue' }}>
-        <strong>Response:</strong> {response}
+        <strong>レスポンス:</strong> {response}
       </div>
     </div>
   );
